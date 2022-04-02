@@ -1,0 +1,133 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: burlywood;
+   
+   
+
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+.navbar{
+    z-index: 99999; 
+    width: 100%;
+}
+.navbar ul {
+    display : flex;
+    margin-left: 39%;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.navbar li {
+        margin-right: 19px;
+}
+
+.navbar li a {
+    color: #333;
+    letter-spacing: 2px;
+}
+.Active a{
+    position: relative ;
+    color: blueviolet !important;
+    letter-spacing: 2px;
+}
+.Active a::before {
+    content :"";
+    position:absolute;
+    height : 50px;
+    width: 2px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    
+
+
+
+}
+.container
+{
+    position: relative;
+   
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    overflow: hidden;
+}
+img
+{
+    width: 401px;
+    height: 300px;
+}
+.container .card
+{
+    width: 100%;
+        background-color: white;
+}
+.container .card .imgbx
+{
+    position: relative;
+    width: 100%;
+    height: 310px;
+ 
+    
+}
+.container .card .imgbx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: right;
+    transition: 0.5s ease-in-out;
+    transform-origin: right;
+
+}
+.container .card:hover .imgbx img
+{
+transform: scale(1.5);
+}
+.container .card .content
+{
+    padding: 10px;
+}
+.container .card .content .productname h3
+{
+font-size: 18px;
+font-weight: 500;
+color: #333;
+margin: 5px 0;
+}
+.container .card .content .pice_rating
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .card .content .pice_rating h2{
+    font-size: 20px;
+    color: red;
+    font-weight: 500x;
+}
+.container .card .content .pice_rating  .fa
+{
+    color: yellow;
+    cursor: pointer;
+}
+.container .card .content .pice_rating  .fa.grey
+{
+color: #ccc;
+}
+
+
+
